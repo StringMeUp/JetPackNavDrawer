@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_main"
+    app:startDestination="@id/navHome_Id">
+
+    <fragment
+        android:id="@id/navHome_Id"
+        android:name="com.example.jetpacknavdrawer.HomeFragment"
+        android:label="@string/itemOne"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@id/navDetails_Id"
+        android:name="com.example.jetpacknavdrawer.DetailsFragment"
+        android:label="@string/itemTwo"
+        tools:layout="@layout/fragment_details" />
+    <fragment
+        android:id="@id/navInfo_Id"
+        android:name="com.example.jetpacknavdrawer.InfoFragment"
+        android:label="@string/itemThree"
+        tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@id/navSend_Id"
+        android:name="com.example.jetpacknavdrawer.SendFragment"
+        android:label="@string/itemFour"
+        tools:layout="@layout/fragment_send" >
+        <action
+            android:id="@+id/action_navSend_Id_to_contactsFragment"
+            app:destination="@id/contactsFragment" />
+    </fragment>
+    <fragment
+        android:id="@id/navSubscriptions_Id"
+        android:name="com.example.jetpacknavdrawer.SubscriptionsFragment"
+        android:label="@string/itemFive"
+        tools:layout="@layout/fragment_sunscriptions" />
+    <fragment
+        android:id="@id/navLocation_Id"
+        android:name="com.example.jetpacknavdrawer.AddLocationFragment"
+        android:label="@string/itemSix"
+        tools:layout="@layout/fragment_add_location" />
+    <fragment
+        android:id="@+id/contactsFragment"
+        android:name="com.example.jetpacknavdrawer.ContactsFragment"
+        android:label="fragment_contacts"
+        tools:layout="@layout/fragment_contacts" />
+</navigation>

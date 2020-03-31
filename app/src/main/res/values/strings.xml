@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">JetPackNavDrawer</string>
+    //menu_nav group items
+    <string name="itemOne">Home</string>
+    <string name="itemTwo">Details</string>
+    <string name="itemThree">Info</string>
+    <string name="itemFour">Send</string>
+    //menu_nav communicate items
+    <string name="menuCommunicate">Communicate</string>
+    <string name="itemFive">Subscriptions</string>
+    <string name="itemSix">Add Location</string>
+    //nav header
+    <string name="headerItem">StringMeUP</string>
+    <string name="headerItemTwo">ramic.samirr@gmail.com</string>
+    //buttons
+    <string name="sendButton">Send to Contacts</string>
+    //textViews
+    <string name="contactsBackTextView">Click Here Please</string>
+    <string name="addLocationTextView">This is Add Location Fragment</string>
+    <string name="detailsTextView">This is Details Fragment</string>
+    <string name="homeTextView">This is Home Fragment</string>
+    <string name="infoTextView">This is Info Fragment</string>
+    <string name="sendTextView">This is Send Fragment</string>
+    <string name="subscriptionsTextView">This is Subscriptions Fragment</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
