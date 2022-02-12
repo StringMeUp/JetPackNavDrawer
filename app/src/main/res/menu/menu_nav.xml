@@ -25,6 +25,7 @@
 
     <item android:title="@string/menuCommunicate">
         <menu>
+            <group android:checkableBehavior="single">
             <item
                 android:id="@+id/navSubscriptions_Id"
                 android:icon="@drawable/ic_subscriptions"
@@ -34,6 +35,7 @@
                 android:id="@+id/navLocation_Id"
                 android:icon="@drawable/ic_add_location"
                 android:title="@string/itemSix" />
+            </group>
         </menu>
     </item>
 </menu>

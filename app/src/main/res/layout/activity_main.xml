@@ -15,6 +15,7 @@
 
         <com.google.android.material.appbar.AppBarLayout
             android:layout_width="match_parent"
+            android:layoutDirection="rtl"
             android:layout_height="wrap_content">
 
             <androidx.appcompat.widget.Toolbar
@@ -46,7 +47,7 @@
         android:id="@+id/navigationView_Id"
         android:layout_width="350dp"
         android:layout_height="match_parent"
-        android:layout_gravity="start"
+        android:layout_gravity="end"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header"
         app:menu="@menu/menu_nav" />

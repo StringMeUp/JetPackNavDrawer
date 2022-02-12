@@ -5,10 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.navigation.NavController
 import androidx.navigation.Navigation
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
+import androidx.navigation.ui.*
 import com.google.android.material.navigation.NavigationView
 import kotlinx.android.synthetic.main.activity_main.*
 
@@ -41,10 +38,7 @@ class MainActivity : AppCompatActivity() {
             ), drawerLayout_Id
         )
 
-        setupActionBarWithNavController(
-            navController,
-            appConfig
-        )
+        NavigationUI.setupWithNavController(toolbar_Id, navController, appConfig)
         navigationView.setupWithNavController(navController)
     }
 
