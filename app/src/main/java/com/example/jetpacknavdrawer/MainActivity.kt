@@ -1,6 +1,8 @@
 package com.example.jetpacknavdrawer
 
 import android.os.Bundle
+import android.view.Gravity
+import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.navigation.NavController
@@ -40,6 +42,13 @@ class MainActivity : AppCompatActivity() {
 
         NavigationUI.setupWithNavController(toolbar_Id, navController, appConfig)
         navigationView.setupWithNavController(navController)
+
+        val headerView = navigationView.getHeaderView(0)
+        val close = headerView.findViewById<ImageView>(R.id.close).also {
+            it.setOnClickListener {
+                drawerLayout_Id.closeDrawer(Gravity.LEFT)
+            }
+        }
     }
 
     override fun onSupportNavigateUp(): Boolean {
